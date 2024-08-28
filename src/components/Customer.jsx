@@ -143,8 +143,8 @@ const Customer = () => {
             </div>
 
             {videoOpen && (
-              <div className="fixed left-0 top-0 z-50 flex h-screen w-full items-center justify-center bg-black bg-opacity-85">
-                <div className="mx-auto w-full max-w-[550px] bg-white">
+              <div className="fixed left-0  top-0 z-50 flex h-screen w-full items-center justify-center bg-black bg-opacity-85">
+                <div className="mx-auto w-full  bg-white">
                   <>
                     <iframe
                       className="h-[320px] w-full"
@@ -154,7 +154,7 @@ const Customer = () => {
                 </div>
 
                 <button
-                  onClick={() => setvideoOpen(false)}
+                  onClick={() => setVideoOpen(false)}
                   className="absolute right-0 top-0 flex h-20 w-20 cursor-pointer items-center justify-center text-body-color hover:bg-black"
                 >
                   <svg viewBox="0 0 16 15" className="h-8 w-8 fill-white">

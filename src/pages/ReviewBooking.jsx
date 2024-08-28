@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const ReviewBooking = () => {
   const location = useLocation();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const { cart,  formData, selectedhour, price } = location.state;
 
   const handleEdit = () => {
@@ -14,17 +14,17 @@ const ReviewBooking = () => {
   const handleProceed = () => {
    
     // console.log("Proceed with booking:", cart, formData);
-  };
+  }; 
 
   return (
-    <div className="p-12 bg-gray-100 pt-36">
+    <div className="md:p-12 bg-gray-100 md:pt-36 pt-28 p-4 pb-14">
       <h1 className="text-3xl font-bold text-center mb-10">Review Your Booking</h1>
       <div className="bg-white p-6 rounded-lg shadow-md mx-auto max-w-5xl">
         <h2 className="text-2xl font-semibold mb-6 text-center">Services Selected</h2>
         {cart.map((item, index) => (
           <div key={index} className="mb-4">
             <h3 className="font-bold flex items-center gap-2"><FaHandPointRight />{item.title}</h3>
-            <p>{item.description}</p>
+            {/* <p>{item.description}</p> */}
           </div>
         ))}
         <p className="mb-2"><strong>Selected Hour: </strong> {selectedhour} hours</p>

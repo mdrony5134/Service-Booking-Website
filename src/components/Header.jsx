@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <div>
-      <nav className="w-full md:w-full fixed  top-0  z-50 lg:container md:pb-2  mx-auto bg-gray-100 shadow-sm">
+      <nav className="w-full md:w-full lg:w-full fixed  top-0  z-50 lg:container md:pb-2  mx-auto bg-gray-100 shadow-sm">
         <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4 sm:pt-8">
           <Link
             to={"/"}
@@ -155,32 +155,37 @@ const Header = () => {
           </button>
         </div>
         <ul className="p-4 space-y-4">
-          <li>
-            <a href="#" className="block py-2 px-4 hover:bg-gray-700">
+          <li onClick={toggleSidebar}>
+            <Link to={"/"} className="block py-2 px-4 hover:bg-gray-700">
               Home
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="#" className="block py-2 px-4 hover:bg-gray-700">
+          <li onClick={toggleSidebar}>
+            <Link to={"/about"} className="block py-2 px-4 hover:bg-gray-700">
               About
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="#" className="block py-2 px-4 hover:bg-gray-700">
+          <li onClick={toggleSidebar}>
+            <Link to={"/service"} className="block py-2 px-4 hover:bg-gray-700">
               Services
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="#" className="block py-2 px-4 hover:bg-gray-700">
+          <li onClick={toggleSidebar}>
+            <Link to={"/contact"} className="block py-2 px-4 hover:bg-gray-700">
               Contact
-            </a>
+            </Link>
           </li>
+          <div  onClick={toggleSidebar}>
           <button
+          //  onClick={toggleSidebar}
+            onClick={handleGetStarted}
             type="button"
             className="text-white bg-[#41B3A2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Login
           </button>
+          </div>
+          
         </ul>
       </motion.div>
 
@@ -191,9 +196,6 @@ const Header = () => {
           className="fixed inset-0 z-40 bg-black opacity-50"
         />
       )}
-
-      {/* homepage */}
-      {/* <Home /> */}
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React from 'react'
 const Login = () => {
   return (
     <div>
-      <div className="flex justify-center items-center bg-gray-100 font-[sans-serif] h-[50%] md:min-h-screen p-4 md: md:pt-40 md:pb-20 pt-20 pb-10">
+      <div className="flex justify-center items-center bg-gray-100 font-[sans-serif] h-[50%] md:min-h-screen p-4 md: md:pt-40 md:pb-20 pt-28 pb-10">
         <div className="grid justify-center max-w-md mx-auto">
           <div>
             <img

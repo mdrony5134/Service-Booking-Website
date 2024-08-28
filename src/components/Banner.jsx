@@ -8,7 +8,7 @@ const Banner = () => {
   // const isInView = useInView(ref, { infinite: true });
   return (
     <div>
-      <section className="relative bg-[url(./images/working.jpg)] bg-cover bg-center bg-no-repeat md:h-[20%]">
+      <section className="relative pb-24 md:pb-0 -top-2 md:-top-0 bg-[url(./images/working.jpg)] bg-cover bg-center bg-no-repeat md:h-[20%]">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-900 opacity-75"></div>
 
         <div className="relative mx-auto max-w-screen-xl px-4 md:py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -58,7 +58,17 @@ const Banner = () => {
             </motion.div>
           </div>
         </div>
-        <div className="w-[90%] mx-auto h-[110px] bg-white relative rounded-md top-[55px] shadow-custom z-10"></div>
+        
+        {/* <div class="pb-12 mt-10 bg-gray-50 dark:bg-gray-900 sm:pb-16">
+      <div class="relative">
+        <div class="absolute inset-0 h-1/2 bg-gray-50 dark:bg-gray-900"></div>
+        <div class="relative max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto">
+            
+          </div>
+        </div>
+      </div>
+    </div> */}
       </section>
     </div>
   );

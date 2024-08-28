@@ -7,12 +7,12 @@ const ServiceForm = ({ cart, price, selectedhour }) => {
     phone: "",
     email: "",
     date: "",
-    service: "",
     area: "",
     city: "",
     state: "",
     postCode: "",
   });
+  const [errors, setErrors] = useState({});
 
   const navigate = useNavigate();
 
@@ -22,17 +22,51 @@ const ServiceForm = ({ cart, price, selectedhour }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formState && cart.length > 0) {
+
+    const validateForm = (data) => {
+      const errors = {};
+      if (!data.name.trim()) {
+        errors.name = "User full name required";
+      }
+      if (!data.phone) {
+        errors.phone = "User phone required";
+      }
+      if (!data.email) {
+        errors.email = "User email required";
+      }
+      if (!data.date) {
+        errors.date = "User date required";
+      }
+      if (!data.area) {
+        errors.area = "User area required";
+      }
+      if (!data.state) {
+        errors.state = "User state required";
+      }
+      if (!data.city) {
+        errors.city = "User city required";
+      }
+      if (!data.postCode) {
+        errors.postCode = "User postCode required";
+      }
+      // console.log(errors)
+      return errors;
+    };
+
+    const newError = validateForm(formState);
+    setErrors(newError);
+    if ((Object.keys(newError).length == 0) & (cart.length > 0)) {
       navigate("/review-booking", {
         state: { cart, price, selectedhour, formData: formState },
       });
-    } else {
-      alert("Please complete the form and select at least one service.");
+    }else{
+      return "Booked at least one service"
     }
+
   };
 
   return (
-    <div className="p-12 bg-gray-100">
+    <div className="md:p-12 p-4  bg-gray-100 pb-12">
       <h1 className="text-3xl font-bold text-center mb-10">Your Information</h1>
       <div className="mx-auto w-full max-w-[550px] bg-white p-6 rounded-lg">
         <form onSubmit={handleSubmit}>
@@ -52,6 +86,9 @@ const ServiceForm = ({ cart, price, selectedhour }) => {
               value={formState.name}
               onChange={handleChange}
             />
+            {errors.name && (
+              <span className="text-red-600 text-xs mt-1">{errors.name}</span>
+            )}
           </div>
 
           <div className="mb-5">
@@ -70,6 +107,9 @@ const ServiceForm = ({ cart, price, selectedhour }) => {
               value={formState.phone}
               onChange={handleChange}
             />
+            {errors.phone && (
+              <span className="text-red-600 text-xs mt-1">{errors.phone}</span>
+            )}
           </div>
 
           <div className="mb-5">
@@ -88,6 +128,9 @@ const ServiceForm = ({ cart, price, selectedhour }) => {
               value={formState.email}
               onChange={handleChange}
             />
+            {errors.email && (
+              <span className="text-red-600 text-xs mt-1">{errors.email}</span>
+            )}
           </div>
 
           <div className="-mx-3 flex flex-wrap">
@@ -107,6 +150,11 @@ const ServiceForm = ({ cart, price, selectedhour }) => {
                   value={formState.date}
                   onChange={handleChange}
                 />
+                {errors.date && (
+                  <span className="text-red-600 text-xs mt-1">
+                    {errors.date}
+                  </span>
+                )}
               </div>
             </div>
 
@@ -154,6 +202,9 @@ const ServiceForm = ({ cart, price, selectedhour }) => {
               value={formState.area}
               onChange={handleChange}
             />
+            {errors.area && (
+              <span className="text-red-600 text-xs mt-1">{errors.area}</span>
+            )}
           </div>
 
           <div className="mb-5">
@@ -172,6 +223,9 @@ const ServiceForm = ({ cart, price, selectedhour }) => {
               value={formState.city}
               onChange={handleChange}
             />
+            {errors.city && (
+              <span className="text-red-600 text-xs mt-1">{errors.city}</span>
+            )}
           </div>
 
           <div className="-mx-3 flex flex-wrap">
@@ -192,6 +246,11 @@ const ServiceForm = ({ cart, price, selectedhour }) => {
                   value={formState.state}
                   onChange={handleChange}
                 />
+                {errors.state && (
+                  <span className="text-red-600 text-xs mt-1">
+                    {errors.state}
+                  </span>
+                )}
               </div>
             </div>
 
@@ -212,6 +271,11 @@ const ServiceForm = ({ cart, price, selectedhour }) => {
                   value={formState.postCode}
                   onChange={handleChange}
                 />
+                {errors.postCode && (
+                  <span className="text-red-600 text-xs mt-1">
+                    {errors.postCode}
+                  </span>
+                )}
               </div>
             </div>
           </div>

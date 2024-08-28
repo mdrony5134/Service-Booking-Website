@@ -25,7 +25,8 @@ const BookService = () => {
     // }));
 
     const selectedService = cart.find((service) => service.id === id);
-    console.log(selectedService)
+    // console.log(selectedService)
+    
     if (selectedService) {
       setSelectedHour(hour);
     }
@@ -42,7 +43,7 @@ const BookService = () => {
 
   return (
     <div>
-      <div className="h-[60%] bg-gray-100 md:pt-32 pt-16">
+      <div className="h-[90%] bg-gray-100 md:pt-32 pt-40 pb-3">
         <h1 className="mb-10 text-center text-2xl font-bold pt-10">
           Your Services
         </h1>
@@ -51,14 +52,14 @@ const BookService = () => {
           cart.map((item) => (
             <div key={item.id}>
               <div className="mx-auto max-w-5xl md:justify-center  px-6 md:flex md:space-x-6 xl:px-0">
-                <div className="rounded-lg md:w-2/3">
-                  <div className="flex justify-center mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start">
+                <div className="rounded-lg md:w-2/3 w-full">
+                  <div className="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start">
                     <img
                       src={item.img}
                       alt="product-image"
                       className="w-full rounded-lg sm:w-40"
                     />
-                    <div className="sm:ml-4 sm:flex sm:w-full sm:justify-between flex items-center">
+                    <div className="sm:ml-4 sm:flex sm:w-full sm:justify-between">
                       <div className="mt-5 sm:mt-0">
                         <h2 className="text-lg font-bold text-gray-900">
                           {item.title}
@@ -101,9 +102,8 @@ const BookService = () => {
                             <option value="330">11 month</option>
                             <option value="360">1 year</option> */}
                           </select>
-                        </div>
-                        <div>
-                          <p className="text-sm mb-4 price">
+                          <div className="flex md:flex-none flex-col">
+                          <p className="text-sm mb-4 pt-3 font-bold price">
                             {price ? price : 259.0} TK
                           </p>
                           <button
@@ -114,6 +114,8 @@ const BookService = () => {
                             Remove Service
                           </button>
                         </div>
+                        </div>
+                       
                       </div>
                     </div>
                   </div>
@@ -132,7 +134,7 @@ const BookService = () => {
         {cart.length > 0 ? (
           <button
             type="button"
-            className="relative md:fixed top-[55%] left-[86%] inline-flex items-center px-5 py-5 text-xl font-medium text-center text-white bg-[#41B3A2] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+             class="absolute md:fixed left-[49%] bottom-[472px]  md:top-[55%] md:left-[86%] inline-flex items-center px-5 py-5 text-xl font-medium text-center text-white bg-[#41B3A2]  rounded-lg hover:bg-blue-800 focus:outline-none"
           >
             <span className="sr-only">Notifications</span>
             Your Service
