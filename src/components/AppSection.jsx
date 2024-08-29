@@ -7,7 +7,7 @@ const AppSection = () => {
 
   return (
     <section ref={ref} className="relative bottom-40 md:bottom-40 mx-auto mb-8 text-gray-800 bg-gray-100">
-      <div className="max-w-screen-xl  flex pt-44  md:pt-40 md:pb-20  flex-col justify-center p-6 mx-auto sm:py-12  lg:flex-row ">
+      <div className="max-w-screen-xl  flex pt-16  md:pt-40 md:pb-20  flex-col justify-center p-6 mx-auto sm:py-12  lg:flex-row ">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}

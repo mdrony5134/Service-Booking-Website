@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa";
 const WorkMangement = () => {
   return (
     <div className="max-w-screen-xl  mx-auto py-24">
-      <div>
+      <div className="px-6 md:px-0">
         <h2 className="text-4xl font-normal font-sans text-[#3b3d40]">
           Workforce Management and SMART Human Resource solutions
         </h2>
