@@ -6,10 +6,11 @@ import { motion, useInView } from "framer-motion";
 const Banner = () => {
   // const ref = useRef(null);
   // const isInView = useInView(ref, { infinite: true });
+  
   return (
     <div>
       <section className="relative pb-24 md:pb-0 -top-2 md:-top-0 bg-[url(./images/working.jpg)] bg-cover bg-center bg-no-repeat md:h-[20%]">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-900 opacity-75">
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-900 opacity-75"></div>
 
         <div className="relative mx-auto max-w-screen-xl px-4 md:py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-3xl lg:text-center mx-auto ltr:sm:text-left rtl:sm:text-right">
@@ -69,7 +70,6 @@ const Banner = () => {
         </div>
       </div>
     </div> */}
-    </div>
       </section>
     </div>
   );

@@ -6,8 +6,11 @@ const AppSection = () => {
   let isInView = useInView(ref, { infinite: true });
 
   return (
-    <section ref={ref} className="relative bottom-40 md:bottom-40 mx-auto mb-8 text-gray-800 bg-gray-100">
-      <div className="max-w-screen-xl  flex pt-16  md:pt-40 md:pb-20  flex-col justify-center p-6 mx-auto sm:py-12  lg:flex-row ">
+    <section
+      ref={ref}
+      className="relative bottom-40 md:bottom-40 mx-auto mb-8 text-gray-800 bg-gray-100"
+    >
+      <div className="max-w-screen-xl  flex pt-16  md:pt-40 md:pb-20  flex-col justify-center p-6 mx-auto sm:py-12  lg:flex-row">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -22,7 +25,7 @@ const AppSection = () => {
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 100 }}
-          animate={isInView ? { opacity: 1, x: 0 }:{}}
+          animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1.5 }}
           className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left"
         >

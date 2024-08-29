@@ -6,6 +6,7 @@ const FAQ = () => {
   const toggleQuestion = (index) => {
     setOpenQuestion(openQuestion === index ? null : index);
   };
+  
   const faq = [
     {
       question: "How can I get started?",

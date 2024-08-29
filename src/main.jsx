@@ -12,6 +12,7 @@ import Login from "./pages/Login.jsx";
 import ErrorPage from "./pages/errorPage.jsx";
 import ReviewBooking from "./pages/ReviewBooking.jsx";
 import About from "./pages/About.jsx";
+import CategoryService from "./pages/CategoryService.jsx";
 // import { Router } from 'react-router-dom'
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <Service />,
+      },
+      {
+        path: "/categoryservice",
+        element: <CategoryService />,
       },
       {
         path: "/bookservice",

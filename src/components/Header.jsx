@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Home from "../pages/Home";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useService } from "./Context/CartContext";
+import DropDown from "./DropDown";
 
 const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -107,9 +108,20 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
+              <DropDown />
+                {/* <NavLink
+                to={"/category"}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "block py-2 px-3 md:p-0 text-[#1A1A1A] font-extrabold"
+                      : "block py-2 px-3 md:p-0 text-gray-500"
+                  }
+                >
+                </NavLink> */}
+              </li>
+              <li>
                 <NavLink
                   to={"/contact"}
-                  href="#"
                   className={({ isActive }) =>
                     isActive
                       ? "block py-2 px-3 md:p-0 text-[#1A1A1A] font-extrabold"
@@ -119,6 +131,7 @@ const Header = () => {
                   Contact
                 </NavLink>
               </li>
+            
             </ul>
           </div>
         </div>
@@ -175,17 +188,16 @@ const Header = () => {
               Contact
             </Link>
           </li>
-          <div  onClick={toggleSidebar}>
-          <button
-          //  onClick={toggleSidebar}
-            onClick={handleGetStarted}
-            type="button"
-            className="text-white bg-[#41B3A2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Login
-          </button>
+          <div onClick={toggleSidebar}>
+            <button
+              //  onClick={toggleSidebar}
+              onClick={handleGetStarted}
+              type="button"
+              className="text-white bg-[#41B3A2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Login
+            </button>
           </div>
-          
         </ul>
       </motion.div>
 

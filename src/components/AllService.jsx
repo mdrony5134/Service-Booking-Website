@@ -61,7 +61,7 @@ const AllService = () => {
   return (
     <>
       <div className="header">
-        <h1 className="text-center mb-10 text-3xl font-bold">
+        <h1 className="text-center mb-10 -mt-32 text-3xl font-bold">
          For Your Home
         </h1>
       </div>
