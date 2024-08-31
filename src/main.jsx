@@ -13,6 +13,7 @@ import ErrorPage from "./pages/errorPage.jsx";
 import ReviewBooking from "./pages/ReviewBooking.jsx";
 import About from "./pages/About.jsx";
 import CategoryService from "./pages/CategoryService.jsx";
+import ServiceDetails from "./pages/ServiceDetails.jsx";
 // import { Router } from 'react-router-dom'
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/review-booking",
         element: <ReviewBooking />,
+      },
+      {
+        path: "/serviceDetails",
+        element: <ServiceDetails />,
       },
       {
         path: "/login",

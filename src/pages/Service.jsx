@@ -22,6 +22,9 @@ const Service = () => {
   const handleYourService = () => {
     navigate("/bookService");
   };
+  const handleViewDetails = () =>{
+    navigate("/serviceDetails")
+  }
   return (
     <div className="lg:container mx-auto mt-6 md:pt-32 pb-12 md:pb-0 pt-40">
       <div>
@@ -75,7 +78,7 @@ const Service = () => {
                           ? "Service Booked"
                           : "Book Service"}
                       </button>
-                      <button className="flex items-center justify-center bg-[#41B3A2] px-2 py-1 text-sm text-white transition hover:bg-gray-700 rounded-md ml-4 md:ml-0">
+                      <button onClick={handleViewDetails} className="flex items-center justify-center bg-[#41B3A2] px-2 py-1 text-sm text-white transition hover:bg-gray-700 rounded-md ml-4 md:ml-0">
                         View Details
                       </button>
                     </div>
