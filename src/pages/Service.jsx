@@ -20,7 +20,7 @@ const Service = () => {
     dispatch({ type: "ADD_SERVICE", payload: service });
   };
   const handleYourService = () => {
-    navigate("/bookService");
+    navigate("/workerList");
   };
   const handleViewDetails = () =>{
     navigate("/serviceDetails")

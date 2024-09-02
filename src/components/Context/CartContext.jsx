@@ -19,7 +19,7 @@ const cartReducer = (state, action) => {
     default:
       return state;
   }
-};
+}; 
 
 // cart provider
 export const CartProvider = ({ children }) => {

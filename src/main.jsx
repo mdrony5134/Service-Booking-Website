@@ -14,12 +14,10 @@ import ReviewBooking from "./pages/ReviewBooking.jsx";
 import About from "./pages/About.jsx";
 import CategoryService from "./pages/CategoryService.jsx";
 import ServiceDetails from "./pages/ServiceDetails.jsx";
-// import ClientProfile from "./pages/CreateClientProfile.jsx";
 import WorkerProfile from "./pages/WorkerProfile.jsx";
 import ClientProfile from "./pages/ClientProfile.jsx";
-// import CreateClientProfile from "./components/CreateClientProfile.jsx";
-// import WorkerService from "./pages/WorkerService.jsx";
-// import { Router } from 'react-router-dom'
+import WorkerList from "./pages/WorkerList.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -68,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "/workerProfile",
         element: <WorkerProfile />,
+      },
+      {
+        path: "/workerList",
+        element: <WorkerList />,
       },
       {
         path: "/login",

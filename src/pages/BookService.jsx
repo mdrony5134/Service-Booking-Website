@@ -14,7 +14,7 @@ const BookService = () => {
   };
   const handChangeHour = (e, id) => {
     const hour = e.target.value;
-    const price = 259.0;  
+    const price = 259.0;
     // console.log(id)
     // setServiceDetails((prevDetails) => ({
     //   ...prevDetails,
@@ -26,12 +26,12 @@ const BookService = () => {
 
     const selectedService = cart.find((service) => service.id === id);
     // console.log(selectedService)
-    
+
     if (selectedService) {
       setSelectedHour(hour);
     }
-    if(selectedService){
-      setPrice(price * hour)
+    if (selectedService) {
+      setPrice(price * hour);
     }
     // console.log(unique);
 
@@ -103,19 +103,18 @@ const BookService = () => {
                             <option value="360">1 year</option> */}
                           </select>
                           <div className="flex md:flex-none flex-col">
-                          <p className="text-sm mb-4 pt-3 font-bold price">
-                            {price ? price : 259.0} TK
-                          </p>
-                          <button
-                            onClick={() => handleRemoveService(item)}
-                            type="button"
-                            className="md:block text-white bg-[#41B3A2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-                          >
-                            Remove Service
-                          </button>
+                            <p className="text-sm mb-4 pt-3 font-bold price">
+                              {price ? price : 259.0} TK
+                            </p>
+                            <button
+                              onClick={() => handleRemoveService(item)}
+                              type="button"
+                              className="md:block text-white bg-[#41B3A2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                            >
+                              Remove Service
+                            </button>
+                          </div>
                         </div>
-                        </div>
-                       
                       </div>
                     </div>
                   </div>
@@ -134,7 +133,7 @@ const BookService = () => {
         {cart.length > 0 ? (
           <button
             type="button"
-             class="absolute md:fixed left-[49%] bottom-[472px]  md:top-[55%] md:left-[86%] inline-flex items-center px-5 py-5 text-xl font-medium text-center text-white bg-[#41B3A2]  rounded-lg hover:bg-blue-800 focus:outline-none"
+            class="absolute md:fixed left-[49%] bottom-[472px]  md:top-[55%] md:left-[86%] inline-flex items-center px-5 py-5 text-xl font-medium text-center text-white bg-[#41B3A2]  rounded-lg hover:bg-blue-800 focus:outline-none"
           >
             <span className="sr-only">Notifications</span>
             Your Service
