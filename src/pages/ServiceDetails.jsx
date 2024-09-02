@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { IoMdCheckmark } from "react-icons/io";
+import { useState } from "react";
 import ServiceOverview from "../components/ServiceOverview";
 import Review from "../components/Review";
 import FAQ from "../components/FAQ";
@@ -8,7 +7,7 @@ const ServiceDetails = () => {
   const [activeTab, setActiveTab] = useState("overview");
   return (
     <div>
-      <div className="font-sans pt-40 pb-20">
+      <div className="font-sans md:pt-40 md:pb-20 pt-24 pb-10">
         <div className="p-4  max-w-screen-xl  mx-auto">
           <div className="grid items-start grid-cols-1   lg:grid-cols-2 gap-8 max-lg:gap-16">
             <div className="w-full text-center">
@@ -27,9 +26,7 @@ const ServiceDetails = () => {
                   <h2 className="text-3xl font-bold text-gray-800">
                     Home Cleaning Combo
                   </h2>
-                  <p className="text-sm text-gray-500 mt-2">
-                    Home Service
-                  </p>
+                  <p className="text-sm text-gray-500 mt-2">Home Service</p>
                 </div>
 
                 <div className="ml-auto flex flex-wrap gap-4">
@@ -198,29 +195,40 @@ const ServiceDetails = () => {
             <ul className="flex border-b">
               <button
                 onClick={() => setActiveTab("overview")}
-                className={`font-semibold text-sm  py-3 px-8  cursor-pointer transition-all ${activeTab == "overview" ? "bg-gray-100 text-gray-800 border-b-2 border-gray-800" : ""}`}
+                className={`font-semibold text-sm  py-3 px-8  cursor-pointer transition-all ${
+                  activeTab == "overview"
+                    ? "bg-gray-100 text-gray-800 border-b-2 border-gray-800"
+                    : ""
+                }`}
               >
                 Service Overview
               </button>
               <button
                 onClick={() => setActiveTab("reviews")}
-                className={`font-semibold text-sm  py-3 px-8  cursor-pointer transition-all ${activeTab == "reviews" ? "bg-gray-100 text-gray-800 border-b-2 border-gray-800" : ""}`}
+                className={`font-semibold text-sm  py-3 px-8  cursor-pointer transition-all ${
+                  activeTab == "reviews"
+                    ? "bg-gray-100 text-gray-800 border-b-2 border-gray-800"
+                    : ""
+                }`}
               >
                 Reviews
               </button>
               <button
                 onClick={() => setActiveTab("faq")}
-                className={`font-semibold text-sm  py-3 px-8  cursor-pointer transition-all ${activeTab == "faq" ? "bg-gray-100 text-gray-800 border-b-2 border-gray-800" : ""}`}
+                className={`font-semibold text-sm  py-3 px-8  cursor-pointer transition-all ${
+                  activeTab == "faq"
+                    ? "bg-gray-100 text-gray-800 border-b-2 border-gray-800"
+                    : ""
+                }`}
               >
                 FAQ
               </button>
             </ul>
             <div>
-              {activeTab == "overview" &&  <ServiceOverview  />}
-              {activeTab == "reviews" &&  <Review  />}
-              {activeTab == "faq" &&  <FAQ  />}
+              {activeTab == "overview" && <ServiceOverview />}
+              {activeTab == "reviews" && <Review />}
+              {activeTab == "faq" && <FAQ />}
             </div>
-           
           </div>
         </div>
       </div>

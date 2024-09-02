@@ -108,16 +108,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-              <DropDown />
-                {/* <NavLink
-                to={"/category"}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "block py-2 px-3 md:p-0 text-[#1A1A1A] font-extrabold"
-                      : "block py-2 px-3 md:p-0 text-gray-500"
-                  }
-                >
-                </NavLink> */}
+                <DropDown />
               </li>
               <li>
                 <NavLink
@@ -131,7 +122,6 @@ const Header = () => {
                   Contact
                 </NavLink>
               </li>
-            
             </ul>
           </div>
         </div>
@@ -183,6 +173,12 @@ const Header = () => {
               Services
             </Link>
           </li>
+          {/* <li
+            className="block py-2 px-4 hover:bg-gray-700"
+            // onClick={toggleSidebar}
+          >
+            <DropDown />
+          </li> */}
           <li onClick={toggleSidebar}>
             <Link to={"/contact"} className="block py-2 px-4 hover:bg-gray-700">
               Contact

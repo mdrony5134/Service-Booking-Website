@@ -14,7 +14,7 @@ const BookService = () => {
   };
   const handChangeHour = (e, id) => {
     const hour = e.target.value;
-    const price = 259.0;
+    const price = 259.0;  
     // console.log(id)
     // setServiceDetails((prevDetails) => ({
     //   ...prevDetails,

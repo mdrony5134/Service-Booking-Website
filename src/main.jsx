@@ -14,6 +14,11 @@ import ReviewBooking from "./pages/ReviewBooking.jsx";
 import About from "./pages/About.jsx";
 import CategoryService from "./pages/CategoryService.jsx";
 import ServiceDetails from "./pages/ServiceDetails.jsx";
+// import ClientProfile from "./pages/CreateClientProfile.jsx";
+import WorkerProfile from "./pages/WorkerProfile.jsx";
+import ClientProfile from "./pages/ClientProfile.jsx";
+// import CreateClientProfile from "./components/CreateClientProfile.jsx";
+// import WorkerService from "./pages/WorkerService.jsx";
 // import { Router } from 'react-router-dom'
 const router = createBrowserRouter([
   {
@@ -55,6 +60,14 @@ const router = createBrowserRouter([
       {
         path: "/serviceDetails",
         element: <ServiceDetails />,
+      },
+      {
+        path: "/clientProfile",
+        element: <ClientProfile />,
+      },
+      {
+        path: "/workerProfile",
+        element: <WorkerProfile />,
       },
       {
         path: "/login",
