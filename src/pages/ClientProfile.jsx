@@ -23,7 +23,7 @@ const ClientProfile = () => {
   };
   return (
     <div>
-      <section className="pt-20 md:pt-40 md:pb-20  bg-gray-200">
+      <section className="pt-28 md:pt-40 md:pb-20 pb-10 bg-gray-200">
         <div className=" text-center pb-10">
           <h1 className="text-center text-3xl font-bold inline-block border-b-2 border-emerald-600">
             Client Profile
@@ -53,7 +53,7 @@ const ClientProfile = () => {
                 <div className="m-5">
                   <button
                     onClick={handleProfileEdit}
-                    className="relative left-[900px] flex p-2.5 bg-[#41B3A2] rounded-xl hover:rounded-3xl hover:bg-[#41B3A2] transition-all duration-300 text-white"
+                    className="relative md:left-[900px] left-48 flex p-2.5 bg-[#41B3A2] rounded-xl hover:rounded-3xl hover:bg-[#41B3A2] transition-all duration-300 text-white"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ const ClientProfile = () => {
                     </svg>
                   </button>
                 </div>
-                <div className="text-start   mt-28">
+                <div className="text-start   md:mt-28 mt-12 ">
                   {profileData.userName ? (
                     <h3 className="text-xl font-semibold leading-normal text-blueGray-700 mb-2">
                       Name :{" "}

@@ -57,9 +57,10 @@ const WorkerList = () => {
                   <div className="p-6">
                     <header className="mb-4">
                       <h3 className="text-xl font-medium text-slate-700">
-                        {worker.title}
+                        {/* {worker.title} */}
+                        Mr.Jasim
                       </h3>
-                      <p className=" text-slate-400">{worker.category}</p>
+                      <p className=" text-slate-400">{worker.title}</p>
                     </header>
                   </div>
 
@@ -87,7 +88,7 @@ const WorkerList = () => {
         <button
           onClick={handleYourService}
           type="button"
-          class="absolute md:fixed left-[49%] top-[100px]   md:top-[55%] md:left-[86%] inline-flex items-center px-5 py-5 text-xl font-medium text-center text-white bg-[#41B3A2]  rounded-lg hover:bg-blue-800 focus:outline-none"
+          class="absolute md:fixed left-[49%] top-[100px]   md:top-[55%] md:left-[89%] inline-flex items-center px-5 py-5 text-xl font-medium text-center text-white bg-[#41B3A2]  rounded-lg hover:bg-blue-800 focus:outline-none"
         >
           <span class="sr-only">Notifications</span>
           Your Service

@@ -28,8 +28,8 @@ const CreateClientProfile = ({
     handleSaveProfile(formData);
   };
   return (
-    <div className="py-10 md:pt-80 md:pb-20 flex justify-center items-center fixed left-0 top-0 z-[1055] bg-black bg-opacity-65 h-full w-full overflow-y-auto overflow-x-hidden outline-none">
-      <div className="bg-white shadow-2xl rounded-xl p-8 w-full md:w-3/4 lg:w-1/2">
+    <div className="py-10 md:pt-80 md:pb-20 md:mt-0 flex justify-center items-center fixed left-0 top-0 z-[1055] bg-black bg-opacity-65 h-full w-full overflow-y-auto overflow-x-hidden outline-none">
+      <div className="bg-white shadow-2xl md:mt-0 mt-[150%] rounded-xl p-8 w-full md:w-3/4 lg:w-1/2">
         <div className="flex justify-between items-center">
           <h1 className="text-3xl font-serif font-extrabold text-gray-800 mb-4">
             Create Client Profile

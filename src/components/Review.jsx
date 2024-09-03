@@ -2,8 +2,11 @@ import React, { useState } from "react";
 
 const Review = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
-  const openModal = () => {
+  const handleOpenModal = () => {
     setIsOpenModal(true);
+  };
+  const handleCloseModal = () => {
+    setIsOpenModal(false);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -93,7 +96,7 @@ const Review = () => {
                 4.65 out of 5
               </p>
               <button
-                onClick={openModal}
+                onClick={handleOpenModal}
                 type="button"
                 className="mb-2 me-2 rounded-lg bg-[#41B3A2] px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-primary-300"
               >
@@ -798,7 +801,7 @@ const Review = () => {
       {isOpenModal && (
         <div
           id="review-modal"
-          className="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full items-center justify-center overflow-y-auto overflow-x-hidden md:inset-0 antialiased"
+          className="fixed left-[0] md:pl-[30%] pl-[0%] bg-black bg-opacity-75  right-0 top-0 z-50 max-h-full w-full items-center justify-center overflow-y-auto overflow-x-hidden "
         >
           <div className="relative max-h-full w-full max-w-2xl p-4">
             {/* <!-- Modal content --> */}
@@ -819,6 +822,7 @@ const Review = () => {
                 </div>
                 <button
                   type="button"
+                  onClick={handleCloseModal}
                   className="absolute right-5 top-5 ms-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
                   data-modal-toggle="review-modal"
                 >
@@ -1007,14 +1011,14 @@ const Review = () => {
                 <div className="border-t border-gray-200 pt-4 dark:border-gray-700 md:pt-5">
                   <button
                     type="submit"
-                    className="me-2 inline-flex items-center rounded-lg bg-primary-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                    className="me-2 inline-flex items-center rounded-lg bg-[#41B3A2] px-5 py-2.5 text-center text-sm font-medium text-white"
                   >
                     Add review
                   </button>
                   <button
                     type="button"
                     data-modal-toggle="review-modal"
-                    className="me-2 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+                    className="me-2 rounded-lg border border-gray-200 bg-rose-600 px-5 py-2.5 text-sm font-medium text-white"
                   >
                     Cancel
                   </button>

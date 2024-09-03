@@ -64,7 +64,18 @@ const BookService = () => {
                         <h2 className="text-lg font-bold text-gray-900">
                           {item.title}
                         </h2>
-                        <p className="mt-1 text-xs text-gray-700">36EU - 4US</p>
+                        <p className="mt-1 text-xs text-gray-700">{item.category}</p>
+
+                        <div className="flex items-center gap-4 mt-8">
+                          <img
+                            className="w-12 h-12 bg-blue-600 rounded-full"
+                            src="/images/workerProfile.png"
+                            alt=""
+                          />
+                          <div className="font-medium dark:text-white">
+                            <div>Jese Leos</div>
+                          </div>
+                        </div>
                       </div>
                       <div className="mt-4 flex justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6">
                         <div>
@@ -133,7 +144,7 @@ const BookService = () => {
         {cart.length > 0 ? (
           <button
             type="button"
-            class="absolute md:fixed left-[49%] bottom-[472px]  md:top-[55%] md:left-[86%] inline-flex items-center px-5 py-5 text-xl font-medium text-center text-white bg-[#41B3A2]  rounded-lg hover:bg-blue-800 focus:outline-none"
+            className="absolute md:fixed left-[49%] bottom-[472px]  md:top-[55%] md:left-[86%] inline-flex items-center px-5 py-5 text-xl font-medium text-center text-white bg-[#41B3A2]  rounded-lg hover:bg-blue-800 focus:outline-none"
           >
             <span className="sr-only">Notifications</span>
             Your Service
