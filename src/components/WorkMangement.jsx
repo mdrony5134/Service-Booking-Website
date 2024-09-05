@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa";
 const WorkMangement = () => {
   return (
     <div className="max-w-screen-xl  mx-auto py-24">
-      <div className="px-6 md:px-0">
+      <div  className="px-6 md:px-0">
         <h2 className="text-4xl font-normal font-sans text-[#3b3d40]">
           Workforce Management and SMART Human Resource solutions
         </h2>
@@ -15,7 +15,7 @@ const WorkMangement = () => {
           <br />
           Here is a comprehensive list of key HRIS terms and definitions to aid
           in your decision-making process.
-        </p>
+        </p> 
       </div>
       <div className="flex   px-6 md:px-20 justify-between  bg-hero  overflow-hidden">
         <div className="flex gap-5 md:gap-96 flex-col   md:flex-row ">

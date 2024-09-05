@@ -1,7 +1,7 @@
 import React from "react";
 import { MdClose } from "react-icons/md";
 
-const WorkerService = ({handleCloseService}) => {
+const WorkerService = ({ handleCloseService }) => {
   return (
     <div>
       <section className=" bg-blueGray-50 py-10 md:pt-60 md:pb-20 flex justify-center items-center fixed left-0 top-0 z-[1055] bg-black bg-opacity-65 h-full w-full overflow-y-auto overflow-x-hidden outline-none">
@@ -15,10 +15,7 @@ const WorkerService = ({handleCloseService}) => {
                   </h3>
                 </div>
                 <div className="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                  <button 
-                  onClick={handleCloseService} 
-                  className="text-3xl"
-                  >
+                  <button onClick={handleCloseService} className="text-3xl">
                     <MdClose />
                   </button>
                 </div>
@@ -46,19 +43,6 @@ const WorkerService = ({handleCloseService}) => {
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 ">
                       1,480
                     </td>
-                    {/* <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <div className="flex items-center">
-                        <span className="mr-2">60%</span>
-                        <div className="relative w-full">
-                          <div className="overflow-hidden h-2 text-xs flex rounded bg-red-200">
-                            <div
-                              //   style={{width: 60%}}
-                              className="shadow-none flex w-[60%] flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
-                            ></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td> */}
                   </tr>
                   <tr>
                     <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
@@ -67,16 +51,6 @@ const WorkerService = ({handleCloseService}) => {
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                       5,480
                     </td>
-                    {/* <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <div className="flex items-center">
-                        <span className="mr-2">50%</span>
-                        <div className="relative w-full">
-                          <div className="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
-                            <div className="shadow-none flex flex-col text-center whitespace-nowrap w-[50%] text-white justify-center bg-purple-500"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td> */}
                   </tr>
                   <tr>
                     <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
@@ -85,16 +59,6 @@ const WorkerService = ({handleCloseService}) => {
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                       4,807
                     </td>
-                    {/* <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <div className="flex items-center">
-                        <span className="mr-2">60%</span>
-                        <div className="relative w-full">
-                          <div className="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
-                            <div className="shadow-none w-[60%] flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td> */}
                   </tr>
                   <tr>
                     <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
@@ -103,16 +67,6 @@ const WorkerService = ({handleCloseService}) => {
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                       3,678
                     </td>
-                    {/* <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <div className="flex items-center">
-                        <span className="mr-2">85%</span>
-                        <div className="relative w-full">
-                          <div className="overflow-hidden h-2 text-xs flex rounded bg-lightBlue-200">
-                            <div className="shadow-none w-[85%] flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td> */}
                   </tr>
                   <tr>
                     <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
@@ -121,16 +75,6 @@ const WorkerService = ({handleCloseService}) => {
                     <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                       2,645
                     </td>
-                    {/* <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <div className="flex items-center">
-                        <span className="mr-2">60%</span>
-                        <div className="relative w-full">
-                          <div className="overflow-hidden h-2 text-xs flex rounded bg-orange-200">
-                            <div className="shadow-none w-[60%] flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td> */}
                   </tr>
                 </tbody>
               </table>

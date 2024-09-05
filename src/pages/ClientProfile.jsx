@@ -30,7 +30,7 @@ const ClientProfile = () => {
           </h1>
         </div>
         <div className="w-full lg:w-[70%]   md:w-1/2 px-4 mx-auto">
-          <div className=" flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16 md:h-[400px]">
+          <div className=" flex flex-col min-w-0 break-words bg-[#41B3A2] w-full mb-6 shadow-xl rounded-lg mt-16 md:h-[550px] text-white">
             <div className="px-6">
               <div className="flex flex-wrap justify-start">
                 <div className="w-full px-4 flex justify-center">
@@ -53,7 +53,7 @@ const ClientProfile = () => {
                 <div className="m-5">
                   <button
                     onClick={handleProfileEdit}
-                    className="relative md:left-[900px] left-48 flex p-2.5 bg-[#41B3A2] rounded-xl hover:rounded-3xl hover:bg-[#41B3A2] transition-all duration-300 text-white"
+                    className="relative md:left-[900px] left-48 flex p-2.5 bg-emerald-600 rounded-xl hover:rounded-3xl hover:bg-[#41B3A2] transition-all duration-300 text-white"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -72,18 +72,150 @@ const ClientProfile = () => {
                   </button>
                 </div>
                 <div className="text-start   md:mt-28 mt-12 ">
-                  {profileData.userName ? (
-                    <h3 className="text-xl font-semibold leading-normal text-blueGray-700 mb-2">
-                      Name :{" "}
-                      <span className="text-xl font-normal">
-                        {profileData.userName}
-                      </span>
-                    </h3>
+                  {profileData.userName && profileData.description ? (
+                    <div className="w-[700px]">
+                    <h1 className="text-center text-3xl font-bold ml-32">{profileData.userName}</h1>
+                  <p class="w-fit text-white py-8 italic  text-md">
+                    {profileData.description}
+                </p>
+                  </div>
+                    
                   ) : (
-                    ""
+                    <div className="w-[700px]">
+                    <h1 className="text-center text-gray-600 text-3xl font-bold ml-32">Jones Mith</h1>
+                  <p class="w-fit text-gray-600 py-8 italic  text-md">Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam debitis labore consectetur voluptatibus mollitia dolorem
+                veniam omnis ut quibusdam minima sapiente repellendus asperiores explicabo, eligendi odit, dolore
+                </p>
+                  </div>
                   )}
+                 
+                  {/* here */}
+                  {
+                    profileData.userName && profileData.area && profileData.address ? (
+                      <div class="w-full md:w-[650px] my-auto py-6 flex flex-col justify-center gap-2">
+                    <div class="w-full flex sm:flex-row xs:flex-col gap-2 justify-center">
+                      <div class="w-full">
+                        <dl class="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                          <div class="flex flex-col pb-3">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400">
+                              Full Name
+                            </dt>
+                            <dd class="text-lg font-semibold text-white">{profileData.userName}</dd>
+                          </div>
+                          <div class="flex flex-col py-3 ">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400 ">
+                             Area
+                            </dt>
+                            <dd class="text-lg font-semibold border-b border-gray-200 text-white pb-2">{profileData.area}</dd>
+                          </div>
+                         
+                         
+                        </dl>
+                      </div>
+                      <div class="w-full">
+                        <dl class="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                        <div class="flex flex-col pb-3">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400">
+                              Phone Number
+                            </dt>
+                            <dd class="text-lg font-semibold text-gray-600">+251913****30</dd>
+                          </div>
 
-                  <div className="text-xl leading-normal mt-0 mb-2 text-blueGray-400 font-bold">
+                          <div class="flex flex-col pt-3">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400">
+                             Address
+                            </dt>
+                            <dd class="text-lg font-semibold border-b border-gray-200 text-white pb-2">{profileData.address}</dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                    ):(
+                      <div class="w-full md:w-[650px] my-auto py-6 flex flex-col justify-center gap-2">
+                    <div class="w-full flex sm:flex-row xs:flex-col gap-2 justify-center">
+                      <div class="w-full">
+                        <dl class="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                          <div class="flex flex-col pb-3">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400">
+                              Full Name
+                            </dt>
+                            <dd class="text-lg font-semibold text-gray-600">Jhons mith</dd>
+                          </div>
+                          <div class="flex flex-col py-3 ">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400 ">
+                             Area
+                            </dt>
+                            <dd class="text-lg font-semibold border-b border-gray-200 text-gray-600 pb-2">Abera</dd>
+                          </div>
+                         
+                         
+                        </dl>
+                      </div>
+                      <div class="w-full">
+                        <dl class="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                        <div class="flex flex-col pb-3">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400">
+                              Phone Number
+                            </dt>
+                            <dd class="text-lg font-semibold text-gray-600">+251913****30</dd>
+                          </div>
+
+                          <div class="flex flex-col pt-3">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400">
+                             Address
+                            </dt>
+                            <dd class="text-lg font-semibold border-b border-gray-200 text-gray-600 pb-2">user address</dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                    )
+                  }
+                  {/* <div class="w-full md:w-[650px] my-auto py-6 flex flex-col justify-center gap-2">
+                    <div class="w-full flex sm:flex-row xs:flex-col gap-2 justify-center">
+                      <div class="w-full">
+                        <dl class="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                          <div class="flex flex-col pb-3">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400">
+                              Full Name
+                            </dt>
+                            <dd class="text-lg font-semibold text-gray-600">Jhons mith</dd>
+                          </div>
+                          <div class="flex flex-col py-3 ">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400 ">
+                             Area
+                            </dt>
+                            <dd class="text-lg font-semibold border-b border-gray-200 text-gray-600 pb-2">Abera</dd>
+                          </div>
+                         
+                         
+                        </dl>
+                      </div>
+                      <div class="w-full">
+                        <dl class="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                        <div class="flex flex-col pb-3">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400">
+                              Phone Number
+                            </dt>
+                            <dd class="text-lg font-semibold text-gray-600">+251913****30</dd>
+                          </div>
+
+                          <div class="flex flex-col pt-3">
+                            <dt class="py-2 text-white md:text-lg dark:text-gray-400">
+                             Address
+                            </dt>
+                            <dd class="text-lg font-semibold border-b border-gray-200 text-gray-600 pb-2">user address</dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+                  </div> */}
+                  {/* here */}
+
+                  {/* <div className="text-xl leading-normal mt-0 mb-2 text-blueGray-400 font-bold">
                     <h3 className="text-xl font-semibold leading-normal text-blueGray-700 mb-2">
                       Phone :{" "}
                       <span className="text-xl font-normal">017XXXXXXXX</span>
@@ -106,7 +238,7 @@ const ClientProfile = () => {
                         {profileData.description}
                       </span>
                     </h3>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

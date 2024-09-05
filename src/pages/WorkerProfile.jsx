@@ -70,7 +70,7 @@ const WorkerProfile = () => {
                   <div className="text-xl leading-normal mt-0 mb-2 text-blueGray-400 font-bold">
                     <h3 className="text-xl font-semibold leading-normal text-blueGray-700 mb-2">
                       Rating : <span className="text-xl font-normal"></span>
-                    </h3>
+                    </h3> 
                   </div>
                 </div>
               </div>

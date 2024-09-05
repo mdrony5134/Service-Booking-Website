@@ -13,7 +13,7 @@ const AppSection = () => {
       <div className="max-w-screen-xl  flex pt-16  md:pt-40 md:pb-20  flex-col justify-center p-6 mx-auto sm:py-12  lg:flex-row">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
+          animate={isInView ? { opacity: 1, x: 0 } : {}} 
           transition={{ duration: 1.5 }}
           className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
         >

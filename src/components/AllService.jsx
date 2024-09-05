@@ -72,7 +72,7 @@ const AllService = () => {
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-[300px] overflow-hidden p-0 pb-12">
             {cardData.map((data, index) => (
               <li key={index}>
-                {/*<!-- Component: Basic blog card --> */}
+               
                 <div className="overflow-hidden w-[] rounded bg-white text-slate-500 shadow-md shadow-slate-200">
                   {/*  <!-- Image --> */}
                   <figure>
