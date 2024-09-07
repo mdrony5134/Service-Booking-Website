@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BsBagCheck } from "react-icons/bs";
 import { FaUserCircle } from "react-icons/fa";
-import ClientProfile from "../pages/ClientProfile";
-import MyOrder from "./MyOrder";
+import ClientProfile from "../components/ClientProfile";
+import MyOrder from "../components/MyOrder";
 import { IoSettings } from "react-icons/io5";
 import { motion } from "framer-motion";
 

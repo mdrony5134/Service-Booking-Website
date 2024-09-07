@@ -15,9 +15,9 @@ import About from "./pages/About.jsx";
 import CategoryService from "./pages/CategoryService.jsx";
 import ServiceDetails from "./pages/ServiceDetails.jsx";
 import WorkerProfile from "./pages/WorkerProfile.jsx";
-import ClientProfile from "./pages/ClientProfile.jsx";
+// import ClientProfile from "./components/ClientProfile.jsx";
 import WorkerList from "./pages/WorkerList.jsx";
-import ClientDashboard from "./components/ClientDashboard.jsx";
+import ClientDashboard from "./pages/ClientDashboard.jsx";
 
 const router = createBrowserRouter([
   {

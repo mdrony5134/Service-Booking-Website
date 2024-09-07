@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CreateClientProfile from "../components/CreateClientProfile";
+import CreateClientProfile from "./CreateClientProfile";
 
 const ClientProfile = () => {
   const [showModal, setShowModal] = useState(false);
@@ -48,7 +48,7 @@ const ClientProfile = () => {
                 <div className="m-5">
                   <button
                     onClick={handleProfileEdit}
-                    className="relative md:left-[750px] left-48 flex p-2.5 bg-emerald-600 rounded-xl hover:rounded-3xl hover:bg-[#41B3A2] transition-all duration-300 text-white"
+                    className="relative md:left-[840px] left-48 flex p-2.5 bg-emerald-600 rounded-xl hover:rounded-3xl hover:bg-[#41B3A2] transition-all duration-300 text-white"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
