@@ -4,7 +4,7 @@ import { FaUserCircle } from "react-icons/fa";
 import ClientProfile from "../components/ClientProfile";
 import MyOrder from "../components/MyOrder";
 import { IoSettings } from "react-icons/io5";
-import { motion } from "framer-motion";
+
 
 const ClientDashboard = () => {
   const [activeTab, setActiveTab] = useState("profile");
@@ -13,13 +13,10 @@ const ClientDashboard = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
       <div className="py-8 md:py-24 max-w-screen-xl mx-auto flex flex-col md:flex-row gap-10">
-        <motion.nav
-        //   initial={{ x: "-100%" }}
-        //   animate={{ x: menuOpen ? 0 : "-100%" }}
-        //   transition={{ type: "spring", stiffness: 300, damping: 30 }}
+        <nav
           className={`flex flex-col mt-32 md:pt-0 bg-gray-500 w-full md:w-64 h-auto md:h-screen px-4 text-gray-900 border border-gray-500 shadow-md rounded-md md:mt-[100px] ${
             menuOpen ? "block" : "hidden"
-          } md:block`}
+          }  md:block `}
         >
           <div className="flex items-center flex-col justify-center mt-8">
             <img
@@ -56,7 +53,7 @@ const ClientDashboard = () => {
               </li>
             </ul>
           </div>
-        </motion.nav>
+        </nav>
 
         <button
           className="md:hidden mt-20 fixed bg-[#41B3A2]  text-white px-4 py-2 rounded-md  mx-auto"

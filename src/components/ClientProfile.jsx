@@ -25,7 +25,7 @@ const ClientProfile = () => {
     <div>
       <section className="md:pt-10 mt-40 md:mt-0">
         <div className="w-full lg:w-[100%]   md:w-1/2 px-4 mx-auto">
-          <div className=" flex flex-col min-w-0 break-words bg-[#41B3A2] w-full mb-6 shadow-xl rounded-lg mt-16 md:h-[550px] text-white">
+          <div className=" flex flex-col min-w-0 break-words bg-[#41B3A2] w-full mb-6 shadow-xl rounded-lg mt-16 md:h-[620px] text-white">
             <div className="px-6">
               <div className="flex flex-wrap justify-start">
                 <div className="w-full px-4 flex justify-center">
@@ -69,7 +69,7 @@ const ClientProfile = () => {
                 <div className="text-start   md:mt-28 mt-12 ">
                   {profileData.userName && profileData.description ? (
                     <div className="w-[700px]">
-                      <h1 className="text-center text-3xl font-bold">
+                      <h1 className="md:text-center ml-8 md:ml-0 text-3xl font-bold">
                         {profileData.userName}
                       </h1>
                       <p class="md:w-fit text-white w-[35%] text-justify py-8 italic  text-md">
@@ -78,7 +78,7 @@ const ClientProfile = () => {
                     </div>
                   ) : (
                     <div className="w-[700px]">
-                      <h1 className="text-center text-gray-600 text-3xl font-bold">
+                      <h1 className="md:text-center ml-8 md:ml-0 text-gray-600 text-3xl font-bold">
                         Jones Mith
                       </h1>
                       <p class="md:w-fit w-[35%] text-justify text-gray-600 py-8 italic  text-md">

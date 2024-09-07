@@ -2,7 +2,7 @@ import React from "react";
 
 const MyOrder = () => {
   return (
-    <section className="bg-white w-full mt-[97px] px-7 md:w-[90%] py-8 antialiased dark:bg-gray-900 md:py-16">
+    <section className="bg-white w-full mt-[97px] px-7 md:w-[100%] py-8 antialiased dark:bg-gray-900 md:py-16">
       <div className="mx-auto max-w-screen-2xl px-4 2xl:px-0">
         <div className="mx-auto max-w-7xl">
           <div className="gap-4 sm:flex sm:items-center sm:justify-between">
@@ -27,7 +27,7 @@ const MyOrder = () => {
 
                 <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
                   <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
-                   Service Name
+                   Service Name:
                   </dt>
                   <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
                    Home Cleaning
@@ -36,10 +36,18 @@ const MyOrder = () => {
 
                 <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
                   <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
-                    Price:
+                    Total Price:
                   </dt>
                   <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
-                    $4,756
+                    90 Tk
+                  </dd>
+                </dl>
+                <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
+                  <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
+                    Advance:
+                  </dt>
+                  <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
+                    90 Tk
                   </dd>
                 </dl>
 
@@ -80,7 +88,7 @@ const MyOrder = () => {
                     href="#"
                     className="w-full inline-flex justify-center rounded-lg  border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 lg:w-auto"
                   >
-                    View details
+                   Proceed Order
                   </a>
                 </div>
               </div>
@@ -99,7 +107,7 @@ const MyOrder = () => {
 
                 <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
                   <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
-                   Service Name
+                   Service Name:
                   </dt>
                   <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
                    House Shifting
@@ -108,10 +116,18 @@ const MyOrder = () => {
 
                 <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
                   <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
-                    Price:
+                    Total Price:
                   </dt>
                   <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
-                    $499
+                    90 Tk
+                  </dd>
+                </dl>
+                <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
+                  <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
+                    Advance:
+                  </dt>
+                  <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
+                    90 Tk
                   </dd>
                 </dl>
 
@@ -152,7 +168,7 @@ const MyOrder = () => {
                     href="#"
                     className="w-full inline-flex justify-center rounded-lg  border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 lg:w-auto"
                   >
-                    View details
+                   Proceed Order
                   </a>
                 </div>
               </div>
@@ -180,10 +196,18 @@ const MyOrder = () => {
 
                 <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
                   <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
-                    Price:
+                    Total Price:
                   </dt>
                   <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
-                    $85
+                    90 Tk
+                  </dd>
+                </dl>
+                <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
+                  <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
+                    Advance:
+                  </dt>
+                  <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
+                    90 Tk
                   </dd>
                 </dl>
 
@@ -224,7 +248,7 @@ const MyOrder = () => {
                     href="#"
                     className="w-full inline-flex justify-center rounded-lg  border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 lg:w-auto"
                   >
-                    View details
+                   Proceed Order
                   </a>
                 </div>
               </div>
@@ -252,10 +276,18 @@ const MyOrder = () => {
 
                 <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
                   <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
-                    Price:
+                    Total Price:
                   </dt>
                   <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
-                    $119
+                    90 Tk
+                  </dd>
+                </dl>
+                <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
+                  <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
+                    Advance:
+                  </dt>
+                  <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
+                    90 Tk
                   </dd>
                 </dl>
 
@@ -296,7 +328,7 @@ const MyOrder = () => {
                     href="#"
                     className="w-full inline-flex justify-center rounded-lg  border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 lg:w-auto"
                   >
-                    View details
+                   Proceed Order
                   </a>
                 </div>
               </div>
@@ -324,10 +356,18 @@ const MyOrder = () => {
 
                 <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
                   <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
-                    Price:
+                    Total Price:
                   </dt>
                   <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
-                    $2,056
+                    90 Tk
+                  </dd>
+                </dl>
+                <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
+                  <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
+                    Advance:
+                  </dt>
+                  <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
+                    90 Tk
                   </dd>
                 </dl>
 
@@ -368,7 +408,7 @@ const MyOrder = () => {
                     href="#"
                     className="w-full inline-flex justify-center rounded-lg  border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 lg:w-auto"
                   >
-                    View details
+                   Proceed Order
                   </a>
                 </div>
               </div>
@@ -396,10 +436,18 @@ const MyOrder = () => {
 
                 <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
                   <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
-                    Price:
+                    Total Price:
                   </dt>
                   <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
-                    $180
+                    90 Tk
+                  </dd>
+                </dl>
+                <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
+                  <dt className="text-base font-medium text-gray-500 dark:text-gray-400">
+                    Advance:
+                  </dt>
+                  <dd className="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
+                    90 Tk
                   </dd>
                 </dl>
 
@@ -440,7 +488,7 @@ const MyOrder = () => {
                     href="#"
                     className="w-full inline-flex justify-center rounded-lg  border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 lg:w-auto"
                   >
-                    View details
+                   Proceed Order
                   </a>
                 </div>
               </div>
