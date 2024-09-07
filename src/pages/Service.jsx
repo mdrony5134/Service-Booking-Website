@@ -12,11 +12,6 @@ const Service = () => {
   
 
   const handleBookService = (service) => {
-    // if (!cart.some((item) => item.id === service.id)) {
-
-    // } else {
-    //   return "Service already booked";
-    // }
     dispatch({ type: "ADD_SERVICE", payload: service });
   };
   const handleYourService = () => {

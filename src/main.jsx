@@ -17,6 +17,7 @@ import ServiceDetails from "./pages/ServiceDetails.jsx";
 import WorkerProfile from "./pages/WorkerProfile.jsx";
 import ClientProfile from "./pages/ClientProfile.jsx";
 import WorkerList from "./pages/WorkerList.jsx";
+import ClientDashboard from "./components/ClientDashboard.jsx";
 
 const router = createBrowserRouter([
   {
@@ -59,10 +60,10 @@ const router = createBrowserRouter([
         path: "/serviceDetails",
         element: <ServiceDetails />,
       },
-      {
-        path: "/clientProfile",
-        element: <ClientProfile />,
-      },
+      // {
+      //   path: "/clientProfile",
+      //   element: <ClientProfile />,
+      // },
       {
         path: "/workerProfile",
         element: <WorkerProfile />,
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: "/workerList",
         element: <WorkerList />,
+      },
+      {
+        path: "/clientProfile",
+        element: <ClientDashboard />,
       },
       {
         path: "/login",
