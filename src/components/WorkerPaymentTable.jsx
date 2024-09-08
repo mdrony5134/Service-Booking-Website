@@ -5,7 +5,7 @@ const WorkerPaymentTable = ({ handleCloseService }) => {
   return (
     <div className=" bg-blueGray-50 py-10 md:pt-60 md:pb-20 flex justify-center items-center fixed left-0 top-0 z-[1055] bg-black bg-opacity-65 h-full w-full overflow-y-auto overflow-x-hidden outline-none">
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <div className="flex flex-wrap md:w-full items-center bg-white shadow-md py-5 w-[190%]">
+        <div className="flex flex-wrap md:w-full items-center bg-white shadow-md py-5 w-[188%]">
           <div className="relative w-full px-4 max-w-full flex-grow flex-1">
             <h3 className="font-semibold text-lg text-blueGray-700">
               Worker payment details
