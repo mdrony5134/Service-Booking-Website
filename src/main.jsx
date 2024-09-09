@@ -18,6 +18,7 @@ import WorkerProfile from "./pages/WorkerProfile.jsx";
 // import ClientProfile from "./components/ClientProfile.jsx";
 import WorkerList from "./pages/WorkerList.jsx";
 import ClientDashboard from "./pages/ClientDashboard.jsx";
+import ChatBot from "./components/ChatBot.jsx";
 
 const router = createBrowserRouter([
   {
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
       {
         path: "/clientProfile",
         element: <ClientDashboard />,
+      },
+      {
+        path: "/chatbot",
+        element: <ChatBot />,
       },
       {
         path: "/login",
