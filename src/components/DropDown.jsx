@@ -44,17 +44,17 @@ const DropDown = () => {
         >
           <Option handleOptionClick={handleOptionClick} text="Home Cleaning" />
           <Option handleOptionClick={handleOptionClick} text="Ac Service" />
+          {/* <Option handleOptionClick={handleOptionClick} text="Home Cleaning" /> */}
+          {/* <Option handleOptionClick={handleOptionClick} text="Ac Service" />
           <Option handleOptionClick={handleOptionClick} text="Home Cleaning" />
           <Option handleOptionClick={handleOptionClick} text="Ac Service" />
           <Option handleOptionClick={handleOptionClick} text="Home Cleaning" />
           <Option handleOptionClick={handleOptionClick} text="Ac Service" />
           <Option handleOptionClick={handleOptionClick} text="Home Cleaning" />
-          <Option handleOptionClick={handleOptionClick} text="Ac Service" />
-          <Option handleOptionClick={handleOptionClick} text="Home Cleaning" />
-          <Option handleOptionClick={handleOptionClick} text="Ac Service" />
+          <Option handleOptionClick={handleOptionClick} text="Ac Service" /> */}
           <Option
             handleOptionClick={handleOptionClick}
-            text="Shifting Service"
+            text="Shifting Service" 
           />
         </motion.ul>
       </motion.div>

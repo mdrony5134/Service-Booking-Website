@@ -193,7 +193,7 @@ const ChatBot = () => {
                           </div>
                         </div>
                       </div>
-                     </div>
+                    </div>
                     <div className="col-start-1 col-end-8 p-3 rounded-lg">
                       <div className="flex flex-row items-center">
                         <div className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0">
@@ -272,7 +272,7 @@ const ChatBot = () => {
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
-                    >
+                    > 
                       <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -303,7 +303,7 @@ const ChatBot = () => {
                           d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                         ></path>
                       </svg>
-                    </button>
+                    </button>  
                   </div>
                 </div>
                 <div className="ml-4">
