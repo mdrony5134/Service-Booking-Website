@@ -16,7 +16,7 @@ const PaymentSuccess = () => {
           </svg>
           <div className="text-center">
             <h3 className="md:text-2xl text-base text-gray-900 font-semibold text-center">
-              Payment Done!
+              Payment Successful!
             </h3>
             <p className="text-gray-600 my-2">
               Thank you for completing your secure online payment.
