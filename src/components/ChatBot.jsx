@@ -103,6 +103,7 @@ const ChatBot = () => {
               </div>
             </div>
           </div>
+          
           <div className="flex flex-col flex-auto h-full p-6">
             <div className="flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-gray-100 h-full p-4">
               <div className="flex flex-col h-full overflow-x-auto mb-4">
@@ -306,7 +307,7 @@ const ChatBot = () => {
                     </button>  
                   </div>
                 </div>
-                <div className="ml-4">
+                <d iv className="ml-4">
                   <button className="flex items-center justify-center bg-indigo-500 hover:bg-indigo-600 rounded-xl text-white px-4 py-1 flex-shrink-0">
                     <span>Send</span>
                     <span className="ml-2">
@@ -326,7 +327,7 @@ const ChatBot = () => {
                       </svg>
                     </span>
                   </button>
-                </div>
+                </d>
               </div>
             </div>
           </div>

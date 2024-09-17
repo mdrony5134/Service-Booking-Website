@@ -22,7 +22,7 @@ const WorkerProfile = () => {
 
   return (
     <div>
-      <section className="pt-28 md:pt-40 md:pb-20 pb-12  bg-gray-100">
+      <s ection className="pt-28 md:pt-40 md:pb-20 pb-12  bg-gray-100">
         <div className=" text-center pb-10">
           <h1 className="text-center text-3xl font-bold inline-block border-b-2 border-emerald-600">
             Worker Profile
@@ -159,7 +159,7 @@ const WorkerProfile = () => {
             </div>
           </div>
         </div>
-      </section>
+      </s>
 
       <div>
         {workerServiceModal === "details" && (

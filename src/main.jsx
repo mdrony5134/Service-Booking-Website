@@ -15,10 +15,12 @@ import About from "./pages/About.jsx";
 import CategoryService from "./pages/CategoryService.jsx";
 import ServiceDetails from "./pages/ServiceDetails.jsx";
 import WorkerProfile from "./pages/WorkerProfile.jsx";
-// import ClientProfile from "./components/ClientProfile.jsx";
 import WorkerList from "./pages/WorkerList.jsx";
 import ClientDashboard from "./pages/ClientDashboard.jsx";
 import ChatBot from "./components/ChatBot.jsx";
+import BookingInfo from "./pages/BookingInfo.jsx";
+import PaymentSuccess from "./pages/PaymentSuccess.jsx";
+import PaymentFaild from "./pages/PaymentFaild.jsx";
 
 const router = createBrowserRouter([
   {
@@ -84,6 +86,18 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/bookingInfo",
+        element: <BookingInfo />,
+      },
+      {
+        path: "/paymentSuccess",
+        element: <PaymentSuccess />,
+      },
+      {
+        path: "/paymentFaild",
+        element: <PaymentFaild />,
       },
       {
         path: "*",

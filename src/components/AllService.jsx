@@ -65,16 +65,16 @@ const AllService = () => {
          For Your Home
         </h1>
       </div>
-      {/*<!-- Component: Testimonial carousel --> */}
+     
       <div className="glide-04 relative w-[90%] mx-auto">
-        {/*    <!-- Slides --> */}
+       
         <div data-glide-el="track" className="overflow-hidden">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-[300px] overflow-hidden p-0 pb-12">
             {cardData.map((data, index) => (
               <li key={index}>
                
                 <div className="overflow-hidden w-[] rounded bg-white text-slate-500 shadow-md shadow-slate-200">
-                  {/*  <!-- Image --> */}
+               
                   <figure>
                     <img
                       src={data.img}
@@ -82,7 +82,7 @@ const AllService = () => {
                       className="aspect-video w-full h-48"
                     />
                   </figure>
-                  {/*  <!-- Body--> */}
+                
                   <div className="p-6">
                     <header className="mb-4">
                       <h3 className="text-xl font-medium text-slate-700">
@@ -91,12 +91,12 @@ const AllService = () => {
                     </header>
                   </div>
                 </div>
-                {/*<!-- End Basic blog card --> */}
+                
               </li>
             ))}
           </ul>
         </div>
-        {/*    <!-- Indicators --> */}
+       
         <div
           className="flex w-full items-center justify-center gap-2 p-4"
           data-glide-el="controls"
