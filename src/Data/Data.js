@@ -17,6 +17,12 @@ const serviceData = [
     title: "Item 3",
     category: "Home Cleaning",
   },
+  {
+    id:3,
+    img: "/Home/appliance.jpg",
+    title: "Item 3",
+    category: "Home Cleaning",
+  },
 
   {
     id:4,
@@ -37,8 +43,20 @@ const serviceData = [
     category: "Ac Service",
   },
   {
+    id:5,
+    img: "/Ac/ac_serviceing.jpg",
+    title: "Item 3",
+    category: "Ac Service",
+  },
+  {
     id:7,
     img: "/shifting/house_shifting.jpg",
+    title: "Item 3",
+    category: "Shifting Service",
+  },
+  {
+    id:8,
+    img: "/shifting/commercial_shifting.jpg",
     title: "Item 3",
     category: "Shifting Service",
   },

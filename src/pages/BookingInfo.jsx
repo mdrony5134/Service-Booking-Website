@@ -21,7 +21,7 @@ const BookingInfo = () => {
               <p className="text-gray-500 text-lg font-semibold">
                 Phone Number:
               </p>
-              <p className="font-semibold">017*********</p>
+              <p className="font-semibold">017********</p>
             </div>
             <div>
               <p className="text-gray-500 text-lg font-semibold"> Address:</p>
@@ -61,7 +61,7 @@ const BookingInfo = () => {
                 Payment Status:
               </p>
               <dl className="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
-                <dd className="me-2 mt-1.5 inline-flex items-center rounded bg-green-300 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300">
+                <dd className="me-2 mt-1.5 inline-flex items-center rounded bg-green-300 px-2.5 py-0.5 text-xs font-medium text-green-800">
                   <svg
                     className="me-1 h-3 w-3"
                     aria-hidden="true"
@@ -134,12 +134,12 @@ const BookingInfo = () => {
           </div>
 
           <div className="grid grid-cols-1 py-4 gap-2 md:grid-cols-2 lg:grid-cols-3">
-            <div className="border p-2 rounded-md ">
+            <d iv className="border p-2 rounded-md ">
               <p className="text-gray-500 text-xs font-semibold">
                 Total Service:
               </p>
               <p className="font-bold text-xl">9</p>
-            </div>
+            </d>
             <div className="border p-2 rounded-md ">
               <p className="text-gray-500 text-xs font-semibold">
                 Total Price:

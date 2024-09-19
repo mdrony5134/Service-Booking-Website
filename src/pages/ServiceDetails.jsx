@@ -152,28 +152,7 @@ const ServiceDetails = () => {
                     <option value="6">6 hours</option>
                     <option value="9">9 hours</option>
                     <option value="12">12 hours</option>
-                    {/* <option value="24">1 day</option>
-                            <option value="48">2 day</option>
-                            <option value="72">3 day</option>
-                            <option value="96">4 day</option>
-                            <option value="120">5 day</option>
-                            <option value="144">6 day</option>
-                            <option value="7">1 week</option>
-                            <option value="14">2 week</option>
-                            <option value="21">3 week</option>
-                            <option value="28">4 week</option>
-                            <option value="30">1 month</option>
-                            <option value="60">2 month</option>
-                            <option value="90">3 month</option>
-                            <option value="120">4 month</option>
-                            <option value="150">5 month</option>
-                            <option value="180">6 month</option>
-                            <option value="210">7 month</option>
-                            <option value="240">8 month</option>
-                            <option value="270">9 month</option>
-                            <option value="300">10 month</option>
-                            <option value="330">11 month</option>
-                            <option value="360">1 year</option> */}
+                    
                   </select>
                 </div>
               </div>

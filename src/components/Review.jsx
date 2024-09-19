@@ -584,6 +584,9 @@ const Review = () => {
         </div>
       </section>
 
+
+
+
       {/* <!-- Add review modal --> */}
 
       {isOpenModal && (
@@ -592,9 +595,9 @@ const Review = () => {
           className="fixed left-[0] md:pl-[30%] pl-[0%] bg-black bg-opacity-75  right-0 top-0 z-50 max-h-full w-full items-center justify-center overflow-y-auto overflow-x-hidden "
         >
           <div className="relative max-h-full w-full max-w-2xl p-4">
-            {/* <!-- Modal content --> */}
+          
             <div className="relative rounded-lg bg-white shadow">
-              {/* <!-- Modal header --> */}
+           
               <div className="flex items-center justify-between rounded-t border-b border-gray-200 p-4  md:p-5">
                 <div>
                   <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
@@ -631,7 +634,7 @@ const Review = () => {
                   <span className="sr-only">Close modal</span>
                 </button>
               </div>
-              {/* <!-- Modal body --> */}
+           
               <form onSubmit={handleSubmit} className="p-4 md:p-5">
                 <div className="mb-4 grid grid-cols-2 gap-4">
                   <div className="col-span-2">
