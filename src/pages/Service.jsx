@@ -32,7 +32,7 @@ const Service = () => {
             {category}
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 justify-center gap-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4  justify-center gap-5">
             {serviceData
               .filter((service) => service.category === category)
               .map((service) => (
@@ -43,7 +43,7 @@ const Service = () => {
                       ? "bg-gray-300 opacity-45"
                       : "bg-gray-500"
                   }`}
-                >
+                > 
                   <svg
                     className="absolute bottom-0 left-0 mb-8"
                     viewBox="0 0 375 283"
