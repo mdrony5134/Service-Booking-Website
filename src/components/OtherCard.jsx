@@ -62,7 +62,7 @@ const OtherCard = () => {
 
   // const visibleCards = 4;
   const cardSlides = cardData.slice(currentIndex, visibleCard);
-  console.log(currentIndex, visibleCard)
+  // console.log(currentIndex, visibleCard)
 
   return (
     <div className="py-10">
@@ -73,22 +73,22 @@ const OtherCard = () => {
       </div>
 
       <div className="w-[90%] mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-5">
           {cardSlides.map((data, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col pt-5"
+              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col  overflow-hidden"
             >
               <img
                 src={data.img}
                 alt={data.alt}
-                className="rounded-t-lg w-full h-40 object-cover"
+                className="rounded-t-lg w-full h-40 object-cover hover:scale-110 transition-all ease-linear duration-500"
               />
               <div className="p-4 flex-grow">
                 <h3 className="text-xl font-semibold text-slate-700 mb-2">
                   {data.title}
                 </h3>
-                <p className="text-slate-600">
+                <p className="text-slate-600 italic">
                   Experience the simple pleasures of a world with no cars, and
                   only gentle walks through palm tree forests, and fallen
                   coconuts.
