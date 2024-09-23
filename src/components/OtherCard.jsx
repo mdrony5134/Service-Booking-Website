@@ -23,14 +23,14 @@ const OtherCard = () => {
       title: "Home Cleaning Service",
     },
     {
-      img: "/images/paint.webp",
-      alt: "Painting Service Image",
-      title: "Painting Services",
+      img: "/images/plambing.webp",
+      alt: "Plumbing Service Image",
+      title: "Plumbing Service",
     },
   ];
 
-  const itemsToShow = 4;
-  const infiniteData = [...cardData, ...cardData.slice(0, itemsToShow)];
+  const [itemsToShow, setItemsToShow] = useState(4);
+  const infiniteData = [...cardData.slice(0, itemsToShow)];
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef(null);
   const [isTransitioning, setIsTansitioning] = useState(true);
@@ -40,7 +40,7 @@ const OtherCard = () => {
       handleNext();
     }, 3500);
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, [currentIndex]); 
 
   const handleNext = () => {
     if (sliderRef.current) {
@@ -58,6 +58,28 @@ const OtherCard = () => {
     }
   }, [currentIndex, cardData.length]);
 
+
+  useEffect(() => {
+    const updateItemsToShow = () => {
+      const width = window.innerWidth;
+      // console.log(width)
+      if (width < 640) {
+        setItemsToShow(1);
+      } else if (width < 1024) {
+        setItemsToShow(2);
+      } else {
+        setItemsToShow(4);
+      }
+    };
+
+    updateItemsToShow();
+
+    window.addEventListener("resize", updateItemsToShow);
+    return () => window.removeEventListener("resize", updateItemsToShow);
+  }, [setItemsToShow]);
+
+  console.log(itemsToShow)
+
   return (
     <div className="py-10">
       <div className="header">
@@ -70,12 +92,14 @@ const OtherCard = () => {
         <div
           ref={sliderRef}
           className={`relative flex gap-5 ${
-            isTransitioning ? "transition-transform duration-700" : ""
+            isTransitioning ? "transition-transform duration-1000" : ""
           }`}
           style={{
             transform: `translateX(-${(100 / itemsToShow) * currentIndex}%)`,
           }}
         >
+          {/* className={`min-w-[${100 / itemsToShow}%]`} */}
+
           {infiniteData.map((data, index) => (
             <div key={index} className="min-w-[23.7%]">
               <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col overflow-hidden">
@@ -99,7 +123,7 @@ const OtherCard = () => {
           ))}
         </div>
 
-        <div className="flex pt-5 justify-center items-center mt-8 space-x-2">
+        <div className="flex pt-5 justify-center items-center mt-8 space-x-5">
           <span
             className={`w-3 h-3 ${
               currentIndex % itemsToShow === 0 ? "bg-slate-500" : "bg-slate-300"
