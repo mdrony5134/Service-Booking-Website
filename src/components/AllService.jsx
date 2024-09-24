@@ -39,12 +39,14 @@ const AllService = () => {
     },
   ];
 
-  const itemsToShow = 4;
+  const [itemsToShow, setItemsToShow] = useState(4);
   const infiniteData = [...cardData, ...cardData.slice(0, itemsToShow)];
+  
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef(null);
   const [isTransitioning, setIsTansitioning] = useState(true);
+  const [cardWidth, setCardWidth] = useState("23.7%")
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -77,7 +79,29 @@ const AllService = () => {
         setCurrentIndex(0);
       }, 700);
     }
-  },[currentIndex, cardData.length]);
+  }, [currentIndex, cardData.length]);
+
+  useEffect(() => {
+    const updateItemsToShow = () => {
+      const width = window.innerWidth;
+      // console.log(width)
+      if (width < 640) {
+        setItemsToShow(1);
+        setCardWidth("94.8%");
+      } else if (width < 1024) {
+        setItemsToShow(2);
+        setCardWidth("47.4%");
+      } else {
+        setItemsToShow(4);
+        setCardWidth("23.7%");
+      }
+    };
+
+    updateItemsToShow();
+
+    window.addEventListener("resize", updateItemsToShow);
+    return () => window.removeEventListener("resize", updateItemsToShow);
+  }, [setItemsToShow]);
 
   return (
     <>
@@ -98,7 +122,7 @@ const AllService = () => {
           }}
         >
           {infiniteData.map((data, index) => (
-            <div key={index} className="min-w-[23.7%]">
+            <div key={index} style={{minWidth: cardWidth}}>
               <div className="overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200">
                 <figure>
                   <img

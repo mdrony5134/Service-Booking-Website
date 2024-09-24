@@ -30,10 +30,13 @@ const OtherCard = () => {
   ];
 
   const [itemsToShow, setItemsToShow] = useState(4);
-  const infiniteData = [...cardData.slice(0, itemsToShow)];
+  const infiniteData = [...cardData];
+  infiniteData.push(...cardData.slice(0, itemsToShow));
+  // console.log(infiniteData)
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef(null);
   const [isTransitioning, setIsTansitioning] = useState(true);
+  const [cardWidth, setCardWidth] = useState("23.7%");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -65,10 +68,13 @@ const OtherCard = () => {
       // console.log(width)
       if (width < 640) {
         setItemsToShow(1);
+        setCardWidth("94.8%")
       } else if (width < 1024) {
         setItemsToShow(2);
+        setCardWidth("47.4%")
       } else {
         setItemsToShow(4);
+        setCardWidth("23.7%")
       }
     };
 
@@ -78,7 +84,7 @@ const OtherCard = () => {
     return () => window.removeEventListener("resize", updateItemsToShow);
   }, [setItemsToShow]);
 
-  console.log(itemsToShow)
+  // console.log(itemsToShow)
 
   return (
     <div className="py-10">
@@ -98,10 +104,10 @@ const OtherCard = () => {
             transform: `translateX(-${(100 / itemsToShow) * currentIndex}%)`,
           }}
         >
-          {/* className={`min-w-[${100 / itemsToShow}%]`} */}
+         
 
           {infiniteData.map((data, index) => (
-            <div key={index} className="min-w-[23.7%]">
+            <div key={index} style={{ minWidth: cardWidth }}>
               <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col overflow-hidden">
                 <img
                   src={data.img}

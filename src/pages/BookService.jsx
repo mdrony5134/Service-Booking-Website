@@ -64,7 +64,9 @@ const BookService = () => {
                         <h2 className="text-lg font-bold text-gray-900">
                           {item.title}
                         </h2>
-                        <p className="mt-1 text-xs text-gray-700">{item.category}</p>
+                        <p className="mt-1 text-xs text-gray-700">
+                          {item.category}
+                        </p>
 
                         <div className="flex items-center gap-4 mt-8">
                           <img
@@ -157,8 +159,100 @@ const BookService = () => {
         )}
       </div>
 
-      <div >
-        <h1>hello</h1>
+      <div className="bg-gradient-to-b from-blue-50 via-gray-100 to-gray-50">
+        <div className="max-w-7xl mx-auto py-10 flex gap-4">
+        
+          <div className="bg-white shadow-xl  w-[20%] p-5 rounded-lg border-t-4 border-blue-500 relative overflow-hidden">
+            <div className="flex justify-center mb-4 relative">
+              <div className="absolute top-1 right-0 left-[135px] bg-blue-500 w-11 h-11 rounded-full flex items-center justify-center text-white text-xs font-bold">
+          worker
+        </div>
+              <img
+                className="w-[100px] rounded-full border-2 border-blue-500 shadow-md"
+                src="./images/workerProfile.png"
+                alt="worker profile image"
+              />
+            </div>
+            <h2 className="text-center mt-3 text-lg font-semibold text-gray-800">
+              Mr.Hasem
+            </h2>
+            <div>
+              <p className="text-center py-2 font-medium">Service List</p>
+            </div>
+            <div className="grid grid-cols-2">
+              <div className="text-center text-sm text-gray-500 border-r border-gray-400">
+                <p>Home Service</p>
+                <p>Office Cleaning</p>
+                <p>Clothe Cleaning</p>
+              </div>
+              <div className="text-center text-sm text-gray-500">
+                <p>Home Cleaning</p>
+                <p>Home Cleaning</p>
+                <p>Home Cleaning</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white shadow-xl  w-[20%] p-5 rounded-lg border-t-4 border-blue-500 relative overflow-hidden">
+            <div className="flex justify-center mb-4 relative">
+              <div className="absolute top-1 right-0 left-[135px] bg-blue-500 w-11 h-11 rounded-full flex items-center justify-center text-white text-xs font-bold">
+          worker
+        </div>
+              <img
+                className="w-[100px] rounded-full border-2 border-blue-500 shadow-md"
+                src="./images/workerProfile.png"
+                alt="worker profile image"
+              />
+            </div>
+            <h2 className="text-center mt-3 text-lg font-semibold text-gray-800">
+              Mr.Hasem
+            </h2>
+            <div>
+              <p className="text-center py-2 font-medium">Service List</p>
+            </div>
+            <div className="grid grid-cols-2">
+              <div className="text-center text-sm text-gray-500 border-r border-gray-400">
+                <p>Home Service</p>
+                <p>Office Cleaning</p>
+                <p>Clothe Cleaning</p>
+              </div>
+              <div className="text-center text-sm text-gray-500">
+                <p>Home Cleaning</p>
+                <p>Home Cleaning</p>
+                <p>Home Cleaning</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white shadow-xl  w-[20%] p-5 rounded-lg border-t-4 border-blue-500 relative overflow-hidden">
+            <div className="flex justify-center mb-4 relative">
+              <div className="absolute top-1 right-0 left-[135px] bg-blue-500 w-11 h-11 rounded-full flex items-center justify-center text-white text-xs font-bold">
+          worker
+        </div>
+              <img
+                className="w-[100px] rounded-full border-2 border-blue-500 shadow-md"
+                src="./images/workerProfile.png"
+                alt="worker profile image"
+              />
+            </div>
+            <h2 className="text-center mt-3 text-lg font-semibold text-gray-800">
+              Mr.Hasem
+            </h2>
+            <div>
+              <p className="text-center py-2 font-medium">Service List</p>
+            </div>
+            <div className="grid grid-cols-2">
+              <div className="text-center text-sm text-gray-500 border-r border-gray-400">
+                <p>Home Service</p>
+                <p>Office Cleaning</p>
+                <p>Clothe Cleaning</p>
+              </div>
+              <div className="text-center text-sm text-gray-500">
+                <p>Home Cleaning</p>
+                <p>Home Cleaning</p>
+                <p>Home Cleaning</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {cart.length > 0 && (
