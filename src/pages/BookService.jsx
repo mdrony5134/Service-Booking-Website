@@ -161,12 +161,11 @@ const BookService = () => {
 
       <div className="bg-gradient-to-b from-blue-50 via-gray-100 to-gray-50">
         <div className="max-w-7xl mx-auto py-10 flex gap-4">
-        
           <div className="bg-white shadow-xl  w-[20%] p-5 rounded-lg border-t-4 border-blue-500 relative overflow-hidden">
             <div className="flex justify-center mb-4 relative">
               <div className="absolute top-1 right-0 left-[135px] bg-blue-500 w-11 h-11 rounded-full flex items-center justify-center text-white text-xs font-bold">
-          worker
-        </div>
+                worker
+              </div>
               <img
                 className="w-[100px] rounded-full border-2 border-blue-500 shadow-md"
                 src="./images/workerProfile.png"
@@ -195,8 +194,8 @@ const BookService = () => {
           <div className="bg-white shadow-xl  w-[20%] p-5 rounded-lg border-t-4 border-blue-500 relative overflow-hidden">
             <div className="flex justify-center mb-4 relative">
               <div className="absolute top-1 right-0 left-[135px] bg-blue-500 w-11 h-11 rounded-full flex items-center justify-center text-white text-xs font-bold">
-          worker
-        </div>
+                worker
+              </div>
               <img
                 className="w-[100px] rounded-full border-2 border-blue-500 shadow-md"
                 src="./images/workerProfile.png"
@@ -225,8 +224,8 @@ const BookService = () => {
           <div className="bg-white shadow-xl  w-[20%] p-5 rounded-lg border-t-4 border-blue-500 relative overflow-hidden">
             <div className="flex justify-center mb-4 relative">
               <div className="absolute top-1 right-0 left-[135px] bg-blue-500 w-11 h-11 rounded-full flex items-center justify-center text-white text-xs font-bold">
-          worker
-        </div>
+                worker
+              </div>
               <img
                 className="w-[100px] rounded-full border-2 border-blue-500 shadow-md"
                 src="./images/workerProfile.png"
@@ -251,6 +250,31 @@ const BookService = () => {
                 <p>Home Cleaning</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative w-[250px] h-[254px] p-[5px] rounded-xl overflow-visible bg-gradient-to-r from-[#74ebd5] to-[#acb6e5] z-10">
+        <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#f6d365] to-[#fda085] rotate-2"></div>
+        <div className="absolute inset-0 rounded-xl bg-gradient-to-tr from-[#84fab0] to-[#8fd3f4] -rotate-2"></div>
+
+        <div className="relative w-full h-full bg-[#292b2c] flex justify-center items-center rounded-lg z-20">
+          <div className="relative px-6 pt-6 flex items-center justify-center">
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 rounded-md"></div>
+            <img
+              className="relative w-64 rounded-md transform transition-transform duration-500 hover:scale-105"
+              // src={service.img}
+              src="./public/Home/appliance.jpg"
+              alt="Service"
+            />
+          </div>
+
+          <div className="text-center">
+            <a href="#">
+              <h5 className="text-xl text-white mt-5 font-medium tracking-tight transition-colors duration-500 hover:text-[#41B3A2]">
+              Home cleanig
+              </h5>
+            </a>
           </div>
         </div>
       </div>

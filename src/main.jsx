@@ -21,6 +21,7 @@ import ChatBot from "./components/ChatBot.jsx";
 import BookingInfo from "./pages/BookingInfo.jsx";
 import PaymentSuccess from "./pages/PaymentSuccess.jsx";
 import PaymentFaild from "./pages/PaymentFaild.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
@@ -98,6 +99,10 @@ const router = createBrowserRouter([
       {
         path: "/paymentFaild",
         element: <PaymentFaild />,
+      },
+      {
+        path: "/notFoundWorker",
+        element: <NotFound />,
       },
       {
         path: "*",
