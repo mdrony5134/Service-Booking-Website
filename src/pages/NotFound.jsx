@@ -4,7 +4,7 @@ const NotFound = () => {
   return (
     <div className="bg-gray-100 h-screen flex flex-col justify-center items-center">
       <div className="text-center">
-        <svg
+        <svg 
           className="emoji-404 relative animate-mymove md:ml-40 ml-20"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 226 249.135"
@@ -92,9 +92,9 @@ const NotFound = () => {
         </div>
         <div className="mt-6">
           <button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
-           Go Back
+           Go Back 
           </button>
-        </div>
+        </div> 
       </div>
     </div>
   );

@@ -75,8 +75,6 @@ const Service = () => {
                           ? "Service Booked"
                           : "Book Service"}
                       </button>
-
-                     
                       <button
                         onClick={handleViewDetails}
                         className="flex-1 mx-1 flex items-center justify-center bg-[#41B3A2] px-2 py-1 text-sm text-white transition hover:bg-gray-700 rounded-md shadow-lg hover:shadow-xl"
