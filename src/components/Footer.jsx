@@ -32,7 +32,8 @@ const Footer = () => {
                       href="javascript:void(0)"
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
-                      info@sheba.xyz
+                      info@radissonbd.com
+                      radissonmedia2021@gmail.com
                     </a>
                   </li>
                   <h3
@@ -46,7 +47,8 @@ const Footer = () => {
                       href="javascript:void(0)"
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
-                      BDBL Bhaban (Level 5 - West), 12 Kawran Bazar, Dhaka -1215
+                      Shah Ali Tower(6th & 7th Floor), <br />
+                      33 Kawran Bazar, Dhaka-1215
                     </a>
                   </li>
                 </ul>

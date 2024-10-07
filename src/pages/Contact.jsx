@@ -1,16 +1,15 @@
 import React, { useRef } from "react";
 
 const Contact = () => {
-   
   return (
     <div>
-      <section className="bg-blue-50 md:pt-24 pt-14 dark:bg-slate-800" id="contact">
+      <section
+        className="bg-blue-50 md:pt-24 pt-14 dark:bg-slate-800"
+        id="contact"
+      >
         <div className="mx-auto max-w-screen-xl  px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div className="mb-4">
-            <div
-             
-              className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12"
-            > 
+            <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
               <p className="text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-200">
                 Contact
               </p>
@@ -54,10 +53,8 @@ const Contact = () => {
                         Our Address
                       </h3>
                       <p className="text-gray-600 dark:text-slate-400">
-                        1230 Maecenas Street Donec Road
-                      </p>
-                      <p className="text-gray-600 dark:text-slate-400">
-                        New York, EEUU
+                        Shah Ali Tower(6th & 7th Floor), <br />
+                        33 Kawran Bazar, Dhaka-1215
                       </p>
                     </div>
                   </li>
@@ -85,10 +82,12 @@ const Contact = () => {
                         Contact
                       </h3>
                       <p className="text-gray-600 dark:text-slate-400">
-                        Mobile: +1 (123) 456-7890
+                        Telephone: +88 02 8180202 <br />
+                        Mobile: +880 1611 777 770 
                       </p>
                       <p className="text-gray-600 dark:text-slate-400">
-                        Mail: tailnext@gmail.com
+                      Email: info@radissonbd.com <br />
+                      radissonmedia2021@gmail.com
                       </p>
                     </div>
                   </li>

@@ -54,7 +54,7 @@ const Service = () => {
                       />
                     </div>
 
-                    <div className="text-center mt-2">
+                     <div className="text-center mt-2">
                       <a href="#">
                         <h5 className="text-xl py-2 text-white font-medium tracking-tight transition-colors duration-500 hover:text-[#41B3A2]">
                           {service.title}

@@ -89,7 +89,7 @@ const ServiceDetails = () => {
                 <div>
                   <p className="text-gray-800 text-4xl font-bold">300 Tk</p>
                   <p className="text-gray-500 text-sm mt-2">
-                    <strike>100 Tk</strike>{" "}
+                    <strike>100 Tk</strike>
                     <span className="text-sm ml-1">(10% discount) </span>
                   </p>
                 </div>

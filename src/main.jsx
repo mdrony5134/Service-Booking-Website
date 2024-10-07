@@ -101,6 +101,10 @@ const router = createBrowserRouter([
         element: <PaymentFaild />,
       },
       {
+        path: "/trailCard",
+        element: <trailCard />,
+      },
+      {
         path: "/notFoundWorker",
         element: <NotFound />,
       },
