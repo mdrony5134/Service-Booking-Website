@@ -66,28 +66,28 @@ const Customer = () => {
                       src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
                       alt="Avatar"
                     />
-                  </div>
+                  </div> 
                   <div class="ms-4">
                     <div class="text-base font-semibold text-gray-800 dark:text-neutral-400">
                       Josh Grazioso
                     </div>
                     <div class="text-xs text-gray-500 dark:text-neutral-500">
-                      Source title
+                      Source title    
                     </div>
                   </div>
                 </div>
               </footer>
-            </blockquote>
-          </motion.div>
+            </blockquote> 
+          </motion.div> 
         </div>
         <div class="flex items-center py-5 md:w-1/2 pt-[30px] pb-10 md:pb-20 md:pt-[70px] md:pl-14">
           <motion.section
             initial={{ opacity: 0, x: 100 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            animate={isInView ? { opacity: 1, x: 0 } : {}} 
             transition={{ duration: 1 }}
-            className="container py-8 md:pt-8 bg-dark"
+            className="container py-8 md:pt-8 bg-dark" 
           >
-            <div ref={domNode} className="">
+            <div ref={domNode}>
               <div className="mr-8 flex flex-wrap justify-center">
                 <div className="w-full px-4 lg:w-full">
                   <div className="relative z-20 h-[300px] w-[120%] overflow-hidden rounded-lg md:h-[300px]">
@@ -118,7 +118,7 @@ const Customer = () => {
                       </a>
                     </div>
 
-                    <div>
+                     <div>
                       <span className="absolute left-4 top-4 z-40">
                         <svg
                           width="50"

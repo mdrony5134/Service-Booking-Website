@@ -95,7 +95,7 @@ const AllService = () => {
         setItemsToShow(4);
         setCardWidth("23.7%");
       }
-    };
+    };  
 
     updateItemsToShow();
 
